@@ -1759,12 +1759,13 @@ h1, h2, h3, h4 {
   padding: 1.5rem;
 }
 .information .tag {
+  
   display: inline-block;
   width: fit-content;
   background-color: var(--c-titan-white);
   color: var(--c-indigo);
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 1.075rem;
   padding: 0.5em 0.75em;
   line-height: 1;
   border-radius: 6px;
