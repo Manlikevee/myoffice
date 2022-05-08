@@ -161,3 +161,10 @@ text-decoration: none !important;
         font-weight: 500;
         font-family: 'Poppins', sans-serif !important;
     }
+
+    .flexboxx{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: auto;
+    }

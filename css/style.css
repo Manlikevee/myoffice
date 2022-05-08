@@ -1703,3 +1703,10 @@ h1, h2, h3, h4 {
 .django-ckeditor-widget {
     width: 100% ;
 }
+
+.flexboxx{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: auto;
+}
