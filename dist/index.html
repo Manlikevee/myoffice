@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodePen - facebook landing page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section class="hero">
+  
+<div class="text">
+    <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg">
+    <h3>Connect with friends and the world around you on Facebook.</h3>
+  </div>
+  
+  <div class="signup">
+    <form>
+      <input type="email" id="email-input" placeholder="Email" pattern=".+@isslng.com"
+      oninvalid="this.setCustomValidity('Only Registration With Isslng.com Is Allowed')"
+      required>
+      <input type="password" placeholder="Password">
+      <button class="login-btn" type="submit">Log In</button>
+      <a class="forgot-pass" href="#">Forgot password?</a>
+      <hr>
+      <a href="reg.html" class="create-btn" type="submit">Create new account</a>   
+    </form>
+    <a class="createpage" href="#">Create a Page</a><span> for a celebrity, brand or business.</span>
+  </div>
+  
+</section>
+
+
+
+<script>
+  var rejectList = [ "isslng.com"];
+
+function validateEmailField()
+{
+var emailValue = $('#email-input').val(); // To Get Value (can use getElementById)
+var splitArray = emailValue.split('@'); // To Get Array
+
+if(rejectList.indexOf(splitArray[1]) >= 0)
+{
+// Means it has the rejected domains
+return true;
+}
+return false;
+
+}
+</script>
+<!-- partial -->
+  
+</body>
+</html>
